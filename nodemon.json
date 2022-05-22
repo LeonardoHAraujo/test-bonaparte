@@ -1,0 +1,7 @@
+{
+  "watch": ["src"],
+  "ext": "ts",
+  "execMap": {
+    "ts": "tsnd --respawn --transpile-only --exit-child --watch src src/server.ts"
+  }
+}
