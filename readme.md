@@ -3,6 +3,24 @@
 Olá, primeiramente gostaria de agradecer a oportunidade e espero que goste do conteúdo desenvolvido,
 pois foi com carinho e dedicação que realizei este teste.
 
+## Bônus
+
+Para melhor experiência com este projeto, tomei a liberdade de realizar o deploy
+do mesmo em um `droplet` na `digital ocean`. Sendo assim, você poderá testar
+os `endpoits` abaixo antes de rodar o projeto em sua máquina. Espero que goste.
+
+```
+GET - http://159.223.202.147
+```
+
+Resposta:
+
+```
+{
+  "message": "Welcome Bonaparte!!!"
+}
+```
+
 ## Desafio
 
 Então vamos lá! O desafio proposto era desenvolver uma api em Express com Typescript
