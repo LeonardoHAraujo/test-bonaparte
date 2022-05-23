@@ -21,6 +21,9 @@ Resposta:
 }
 ```
 
+*Observação: Não foram configurados `domínio` e `certificado SSL`,
+pois o deploy foi apenas para fins de teste.*
+
 ## Desafio
 
 Então vamos lá! O desafio proposto era desenvolver uma api em Express com Typescript
