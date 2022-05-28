@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 
-import { IMovie, IPagination } from '../interfaces/IMovie';
 import MoviesModel from '../models/MoviesModel';
+import { IPagination } from '../interfaces/IMovie';
 import { IResponse } from '../interfaces/IResponse';
 
 
@@ -55,6 +55,13 @@ class MoviesController {
 
     const moviesModel: MoviesModel = new MoviesModel();
     const movie = await moviesModel.findMovieById(id);
+
+    if (!movie) {
+      rep.status = 400;
+      rep.message = 'Movie not found.';
+
+      return res.status(rep.status).json(rep);
+    }
 
     rep.status = 200;
     rep.movie = movie;
